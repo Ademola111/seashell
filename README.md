@@ -1,14 +1,10 @@
 # Seashell
 
-## Seashell is a website application that is used to identify different seashell.
+### Seashell is a website application that is used to identify different seashell.
 
-## With the integration of Machine Learning and some seashell dataset
-
-## the webappis able to identify each object uploaded and state it's name.
-
+With the integration of Machine Learning and some seashell dataset the webapp will be able to identify each seashell uploaded and state it's name.\
 Dataset is taken from this website.
-[Dataset](https://www.nature.com/articles/s41597-019-0230-3)
-
+[Dataset](https://www.nature.com/articles/s41597-019-0230-3)\
 To generate the CNN model -
 
 ```
