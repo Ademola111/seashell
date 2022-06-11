@@ -1,3 +1,4 @@
+
 from distutils.file_util import copy_file
 from os import listdir, mkdir
 
@@ -22,4 +23,3 @@ for file in sorted(listdir(src_dir)):
         file_no+=1
     dest=folder+'/'+file_name[0]+'_'+file_name[1]+'.'+str(file_no)+'.jpg'
     copy_file(src,dest)
-    
