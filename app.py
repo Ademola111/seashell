@@ -1,34 +1,34 @@
 from flask import Flask, render_template, request
-from model.predict import load_image, run_example
+# from model.predict import load_image, run_example
 
 app = Flask(__name__)
 
 """homepahe"""
 @app.route('/')
 def home():
-    return "index template will be rendered here"
+    return render_template('home.html')
     
 """upload pic section"""  
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method =="GET":
-        return "upload template will be rendered here to see upload form"
+        return render_template('upload.html')
 
     if request.method == "POST":
         """getting form from server"""
-        filename = request.form.get('pic')
+        filename = request.form.get('filename')
         
         """checking pic in the model"""
         seashell = load_image(filename)
         res = run_example(seashell)
         print(res)
-        return f"upload template will be rendered here for {res}"
+        return render_template('result.html')
 
 
 """contact session"""
 @app.route('/contact')
 def contact():
-    return "contact template will be rendered here "
+    return render_template('contact.html')
 
 
 

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Seashell | Contact
+{% endblock %}
+
+{% block content %}
+<div class="continer-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 mt-5">
+          <section class="Contact">
+            <h1>Give us your feedback</h1>
+            <p>If you have any questions or want to tell us how to make this website better, feel free to contact us! Fill out the form below. </p>
+            <form class="form" action="{{url_for('contact')}}" methods="POST">
+              <fieldset>
+                <div class="fields-container">
+                  <div class="fields mt-3 mb-3">
+                    <label for="firstname"><Strong>First Name</Strong></label><br>
+                    <input type="text" placeholder="First Name" id="firstname" class="form-control mt-3 mb-3" />
+                  </div>
+      
+                  <div class="fields mt-3 mb-3">
+                    <label for="lastname"><Strong>Last Name</Strong></label>
+                    <input type="text" id="lastname" placeholder="Last Name" class="form-control mt-3 mb-3" />
+                  </div>
+      
+                  <div class="fields mt-3 mb-3">
+                    <label for="email"><Strong>Email</Strong></label>
+                    <input id="email" type="email" placeholder="Email" class="form-control mt-3 mb-3" />
+                  </div>
+      
+                  <div class="fields mt-3 mb-3">
+                    <label for="desc"><Strong>Description</Strong></label>
+                    <textarea class="input-text form-control mt-3 mb-3" id="desc"></textarea>
+                  </div>
+                </div>
+  
+                <div class="align-right flex">
+                  <button class="btn btn-success w-100 form-control" type="submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <div class="col-md-4"></div>
+      </div> 
+    </div>
+{% endblock %}
