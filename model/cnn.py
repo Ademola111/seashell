@@ -12,6 +12,8 @@ def define_model():
     model.add(MaxPooling2D((2, 2)))
     model.add(Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
     model.add(MaxPooling2D((2, 2)))
+    model.add(Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
+    model.add(MaxPooling2D((2, 2)))
     model.add(Flatten())
     model.add(Dense(128, activation='relu', kernel_initializer='he_uniform'))
     model.add(Dense(8, activation='softmax'))
@@ -43,7 +45,7 @@ def run_test_harness():
     datagen=ImageDataGenerator(rescale=1.0/255.0)
     train_it=datagen.flow_from_directory('dataset/train',class_mode='categorical',batch_size=32,target_size=(200,200))
     test_it=datagen.flow_from_directory('dataset/test',class_mode='categorical',batch_size=32,target_size=(200,200))
-    history=model.fit(train_it,steps_per_epoch=len(train_it), validation_data=test_it,validation_steps=len(test_it),epochs=10)
+    history=model.fit(train_it,steps_per_epoch=len(train_it), validation_data=test_it,validation_steps=len(test_it),epochs=4)
     _,acc=model.evaluate(test_it,steps=len(test_it))
     print('> %.3f' % (acc * 100.0))
     #learning curve
