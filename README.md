@@ -16,4 +16,4 @@ python predict.py
 
 The process to prediction is shown in the model/predict.py\
 Please generate the model first from cnn_final_model.py before using predict.py\
-Note the image preprocessing done in predict before using the model for precition
+Note the image preprocessing done in predict before using the model for prediction
