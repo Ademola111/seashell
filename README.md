@@ -1,4 +1,4 @@
-# Seashell ML CLASSIFIER WEBSITE
+# SEASHELL ML CLASSIFIER WEBSITE
 
 ### Seashell is a website application that is used to identify different seashell.
 
@@ -22,6 +22,7 @@ After this run the flask app from app.py
 ```
 python app.py
 ```
+
 ### How our website works
 First we have a landing page which explains what the purpose of the website is!
 
@@ -30,4 +31,5 @@ Next, we give the user the ability to upload any type of image (jpeg,png,etc) of
 ### What are our goals for the webiste
 
 We want to be able to help educate people of all ages and background on the hundereds of different types of seashells across the world. Seashells are a vital compoment in our eco system. For example, they are used as homes for sea snails, small fish, crabs and many different animals. Once the seashell has been discared, mother nature slowly grinds it down into tiny microscopic peices which eventually are the main material in beautiful sandy beaches! 
-![]https://github.com/Ademola111/seashell/blob/main/gif1.gif
+
+![Shell gif](demo/[demo.gif](https://github.com/Ademola111/seashell/blob/main/gif1.gif))
