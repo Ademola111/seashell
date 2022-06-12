@@ -163,3 +163,4 @@ cython_debug/
 #.idea/
 
 model/final_model.h5
+final_model.h5
