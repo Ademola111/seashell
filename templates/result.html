@@ -3,9 +3,13 @@ block content %}
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 mt-5 mb-5"></div>
-    <div class="col-md-4 text-center mt-5 mb-5" style="height: 150px; width: 200px; background-color: azure;">
-      <h3>The sea shell image name is</h3>
-      <p><strong>{{res}}</strong></p>
+    <div class="col-md-4 text-center mt-5 mb-5">
+      <div>
+        <img src="{{user_image}}" alt="Uploaded Image" />
+        <p style="padding-top: 10px">
+          The Uploaded Seashell image is of the type {{ res }}
+        </p>
+      </div>
     </div>
     <div class="col-md-4 mt-5 mb-5"></div>
   </div>
