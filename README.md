@@ -1,4 +1,5 @@
-# SEASHELL ML CLASSIFIER WEBSITE
+# SEASHELL MACHINE LEARNING CLASSIFIER WEBSITE 
+# Coastal Hacks Entry 2022
 
 ### Seashell is a website application that is used to identify different seashell.
 
@@ -8,7 +9,6 @@ Dataset is taken from this website.
 
 ### Intructions for setting up in personal enviroment 
 To generate the CNN model -
-
 ```
 pip install -r requirements.txt
 python cnn_final_model.py
@@ -32,4 +32,6 @@ Next, we give the user the ability to upload any type of image (jpeg,png,etc) of
 
 We want to be able to help educate people of all ages and background on the hundereds of different types of seashells across the world. Seashells are a vital compoment in our eco system. For example, they are used as homes for sea snails, small fish, crabs and many different animals. Once the seashell has been discared, mother nature slowly grinds it down into tiny microscopic peices which eventually are the main material in beautiful sandy beaches! 
 
-![Shell gif](demo/[demo.gif](https://github.com/Ademola111/seashell/blob/main/gif1.gif))
+![gif1](https://user-images.githubusercontent.com/82910305/173235953-f1c8310d-44f2-4db7-b0b4-1437f5efbed2.gif)
+
+
