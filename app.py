@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 # from model.predict import load_image, run_example
-
+from predict import classify
 app = Flask(__name__)
 
 """homepahe"""
@@ -17,10 +17,9 @@ def upload():
     if request.method == "POST":
         """getting form from server"""
         filename = request.form.get('filename')
-        
+        """filename should be full name with the .jpg extension"""
         """checking pic in the model"""
-        seashell = load_image(filename)
-        res = run_example(seashell)
+        res = classify(filename)
         print(res)
         return render_template('result.html')
 
