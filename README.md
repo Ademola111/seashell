@@ -34,4 +34,15 @@ We want to be able to help educate people of all ages and background on the hund
 
 ![gif1](https://user-images.githubusercontent.com/82910305/173235953-f1c8310d-44f2-4db7-b0b4-1437f5efbed2.gif)
 
+### Home page
+<img width="1438" alt="Home" src="https://user-images.githubusercontent.com/82910305/173236268-f4abeaeb-b0bd-4a0c-83a0-4171a985d79e.png">
 
+### Upload page
+<img width="1440" alt="Screen Shot 2022-06-12 at 9 43 58 AM" src="https://user-images.githubusercontent.com/82910305/173236364-21db27b3-b451-4653-b6ef-aa581ac7292f.png">
+
+### Result page
+<img width="1440" alt="Screen Shot 2022-06-12 at 9 44 52 AM" src="https://user-images.githubusercontent.com/82910305/173236371-2835ef21-e24e-46b8-833b-3cf3f8e0bc9a.png">
+
+
+### Contact page
+<img width="1440" alt="Screen Shot 2022-06-12 at 9 44 15 AM" src="https://user-images.githubusercontent.com/82910305/173236356-bb26e0c1-2d83-4386-b268-b68f66d3c997.png">
