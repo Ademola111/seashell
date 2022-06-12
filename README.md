@@ -1,7 +1,10 @@
 # SEASHELL MACHINE LEARNING CLASSIFIER WEBSITE 
 # Coastal Hacks Entry 2022
 
-### Seashell is a website application that is used to identify different seashell.
+### Inspiration 
+Seashell was inspired by the hack theme and was derived from different type of shell the ocean current brings to the shore. It was discovered that many tourist don’t know the name of each of this shell they play with at the sea shore so we delve into the research to educate the tourist while they enjoy their vacation.
+
+### Purpose: Seashell is a website application that is used to identify different seashells.
 
 With the integration of Machine Learning and some seashell dataset the webapp will be able to identify each seashell uploaded and state it's name.\
 Dataset is taken from this website.
@@ -23,10 +26,12 @@ After this run the flask app from app.py
 python app.py
 ```
 
-### How our website works
+### How our website works-UI
 First we have a landing page which explains what the purpose of the website is!
 
 Next, we give the user the ability to upload any type of image (jpeg,png,etc) of a seashell, once the user has clicked submit, the name of the seashell will be returned! Simple!
+
+We also have a contact page if you need any help or have any suggestions
 
 ### What are our goals for the webiste
 
@@ -43,6 +48,10 @@ We want to be able to help educate people of all ages and background on the hund
 ### Result page
 <img width="1440" alt="Screen Shot 2022-06-12 at 9 44 52 AM" src="https://user-images.githubusercontent.com/82910305/173236371-2835ef21-e24e-46b8-833b-3cf3f8e0bc9a.png">
 
-
 ### Contact page
 <img width="1440" alt="Screen Shot 2022-06-12 at 9 44 15 AM" src="https://user-images.githubusercontent.com/82910305/173236356-bb26e0c1-2d83-4386-b268-b68f66d3c997.png">
+
+### Contact after submission 
+<img width="1439" alt="Screen Shot 2022-06-12 at 9 50 14 AM" src="https://user-images.githubusercontent.com/82910305/173236491-b9b41973-8a9e-4a1c-b17a-27a34ecb3742.png">
+
+
