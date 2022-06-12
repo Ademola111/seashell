@@ -20,14 +20,14 @@
       }
 
       .topnav a:hover {
-        background-color: #ddd;
+        background-color: #51a8c5;
         color: black;
       }
 
-      .topnav a.active {
+      /* .topnav a.active {
         background-color: #51a8c5;
         color: white;
-      }
+      } */
 
       .float-img{
             margin-right:20px;
@@ -54,9 +54,9 @@
       <div class="topnav">
         <a href="{{url_for('home')}}">Seashell</a>
         <div style="float:right;">
-          <a class="active" href="{{url_for('home')}}">Home  </a>
-          <a href="{{url_for('upload')}}">Upload Picture  </a>
-          <a href="{{url_for('contact')}}">Contact Us</a>
+          <a class="" href="{{url_for('home')}}" id="home">Home  </a>
+          <a class="" href="{{url_for('upload')}}" id="upload">Upload Picture  </a>
+          <a class="" href="{{url_for('contact')}}" id="contact">Contact Us</a>
         </div>
       </div>
   </header>
@@ -67,5 +67,8 @@
       <p style=" text-align: center"><strong>©2022 Seashell. All rights reserved.</strong>
       </p>
   </div>
+  
+
   </body>
+
 </html>
