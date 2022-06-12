@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from werkzeug.utils import secure_filename
+import os
 # from model.predict import load_image, run_example
 from predict import classify
 app = Flask(__name__)
@@ -18,12 +19,13 @@ def upload():
     if request.method == "POST":
         """getting form from server"""
         file = request.files['filename']
-        file.save(secure_filename(file.filename))
+        file.save(os.path.join('static/uploads/',secure_filename(file.filename)))
         """filename should be full name with the .jpg extension"""
         """checking pic in the model"""
-        res = classify(file.filename)
+        res = classify(os.path.join('static/uploads/',file.filename))
         print(res)
-        return render_template('result.html', res=res)
+        filename=os.path.join('static/uploads/',file.filename)
+        return render_template('result.html', res=res,user_image=filename)
 
 
 """contact session"""
@@ -34,6 +36,9 @@ def contact():
     if request.method == 'POST':
         return redirect('/feedback')
 
+# @app.route('/uploads/<filename>',methods=['GET'])
+# def image(filename):
+#     return render_template('result.html',user_image=os.path.join('uploads/',filename))
 """feedback"""
 @app.route('/feedback')
 def feedback():
