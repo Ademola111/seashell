@@ -1,15 +1,8 @@
-{% extends 'base.html' %}
-
-{% block title %}
-Seashell | result
-{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %} Seashell | result {% endblock %} {%
+block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      {# this is a jinja2 comment result of the search should appear here. this is how to display result {{result of search image}}#}
-    </div>
+    <div class="col-md-12">{{res}}</div>
   </div>
 </div>
 {% endblock %}
