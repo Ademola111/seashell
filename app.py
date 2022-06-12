@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from werkzeug.utils import secure_filename
 # from model.predict import load_image, run_example
 from predict import classify
@@ -23,121 +23,21 @@ def upload():
         """checking pic in the model"""
         res = classify(file.filename)
         print(res)
-        return render_template('result.html',res=res)
+        return render_template('result.html', res=res)
 
 
 """contact session"""
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if request.method == 'GET':
+        return render_template('contact.html')
+    if request.method == 'POST':
+        return redirect('/feedback')
+
+"""feedback"""
+@app.route('/feedback')
+def feedback():
+    return render_template('feedback.html')
 
 
 
