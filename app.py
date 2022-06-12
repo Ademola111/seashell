@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from werkzeug.utils import secure_filename
 # from model.predict import load_image, run_example
 from predict import classify
 app = Flask(__name__)
@@ -16,12 +17,13 @@ def upload():
 
     if request.method == "POST":
         """getting form from server"""
-        filename = request.form.get('filename')
+        file = request.files['filename']
+        file.save(secure_filename(file.filename))
         """filename should be full name with the .jpg extension"""
         """checking pic in the model"""
-        res = classify(filename)
+        res = classify(file.filename)
         print(res)
-        return render_template('result.html')
+        return render_template('result.html',res=res)
 
 
 """contact session"""
