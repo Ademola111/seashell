@@ -21,12 +21,12 @@ The process to prediction is shown in the model/predict.py\
 Please generate the model first from cnn_final_model.py before using predict.py\
 Note the image preprocessing done in predict before using the model for prediction\
 After this run the flask app from app.py
-
-Then search http://localhost:8080/ into your browser
-
 ```
 python app.py
 ```
+
+Then search http://localhost:8080/ into your browser
+
 
 ### How our website works-UI
 First we have a landing page which explains what the purpose of the website is!
