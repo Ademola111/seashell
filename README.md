@@ -22,6 +22,8 @@ Please generate the model first from cnn_final_model.py before using predict.py\
 Note the image preprocessing done in predict before using the model for prediction\
 After this run the flask app from app.py
 
+Then search http://localhost:8080/ into your browser
+
 ```
 python app.py
 ```
